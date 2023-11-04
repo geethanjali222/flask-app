@@ -34,7 +34,7 @@ def menu():
     return region_name, key_name, github_repo
     
 def get_image_id (region_name):
-    image_id = ""
+    image_id = "ami-05c13eab67c5d8861"
     ec2 = boto3.resource('ec2', region_name=region_name)
     filters = [
         {'Name': 'owner-id', 'Values': ['137112412989']}, 
